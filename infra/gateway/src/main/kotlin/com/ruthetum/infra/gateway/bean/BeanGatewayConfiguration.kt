@@ -1,4 +1,4 @@
-package com.ruthetum.infra.gateway
+package com.ruthetum.infra.gateway.bean
 
 import org.springframework.cloud.gateway.route.RouteLocator
 import org.springframework.cloud.gateway.route.builder.PredicateSpec

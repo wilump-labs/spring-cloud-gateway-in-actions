@@ -9,9 +9,9 @@ tasks.getByName("jar") {
 dependencies {
     implementation("org.springframework.cloud:spring-cloud-starter-gateway")
     implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
-
-    runtimeOnly("com.h2database:h2")
-    runtimeOnly("io.r2dbc:r2dbc-h2")
+    runtimeOnly("io.asyncer:r2dbc-mysql")
+    testRuntimeOnly("com.h2database:h2")
+    testImplementation("io.r2dbc:r2dbc-h2")
 }
 
 dependencyManagement {

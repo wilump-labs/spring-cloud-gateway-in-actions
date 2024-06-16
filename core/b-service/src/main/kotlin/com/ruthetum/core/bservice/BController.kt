@@ -9,4 +9,9 @@ class BController {
     fun onRequest(): String {
         return "This is B service"
     }
+
+    @GetMapping("/c")
+    fun onRequest2(): String {
+        return "This is C in B service"
+    }
 }

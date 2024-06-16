@@ -1,0 +1,9 @@
+POST http://localhost:18080/routes
+Content-Type: application/json
+
+{
+  "routeIdentifier": "c",
+  "uri": "http://localhost:18091",
+  "method": "GET",
+  "path": "/c/**"
+}

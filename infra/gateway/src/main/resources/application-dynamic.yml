@@ -1,1 +1,12 @@
 spring.config.activate.on-profile: dynamic
+
+spring:
+  r2dbc:
+    url: r2dbc:pool:mysql://localhost:13306/gateway
+    username: root
+    password: 12345678
+    properties:
+      lock_timeout: 40000
+      statement_timeout: 40000
+      idle_in_transaction_session_timeout: 40000
+      connectTimeout: PT55S
