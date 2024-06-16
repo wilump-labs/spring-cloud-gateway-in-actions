@@ -1,0 +1,13 @@
+spring.config.activate.on-profile: props
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: a-service
+          uri: http://localhost:18090
+          predicates:
+            - Path=/a/**
+        - id: b-service
+          uri: http://localhost:18091
+          predicates:
+            - Path=/b/**
